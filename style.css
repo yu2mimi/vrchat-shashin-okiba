@@ -199,6 +199,18 @@ h2:hover{
 .toggle{
   display: none;
 }
+.date-text, .photographer-text{
+  position: absolute;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  font-size: 1.2vw;
+  line-height: 0.8em;
+}
+.photographer-text{
+  right: 0;
+  bottom: 0;
+}
 /* .toggle:checked + .image{
   width: auto;
   height: auto;

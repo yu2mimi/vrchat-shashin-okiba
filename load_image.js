@@ -29,12 +29,19 @@ fetch("assets/json/data.json")
       const text_date = document.createElement("p");
       text_date.className = "date-text";
       text_date.textContent = photo.date;
-      text_date.style.zIndex = 3;
+      text_date.style.display = "none";
+
+      const text_photographer = document.createElement("p");
+      text_photographer.className = "photographer-text";
+      text_photographer.textContent = `Photo by ${photo.photographer}`;
+      text_photographer.style.display = "none";
 
       label.addEventListener("click", () => {
         if(img.style.objectFit == "cover"){
           img.style.objectFit = "fill";
           label.style.objectFit = "fill";
+          text_date.style.display = "";
+          text_photographer.style.display = "";
           if(photo.width > photo.height){
             div.style.width = "80vw";
             div.style.height = `${80*photo.height/photo.width}vw`;
@@ -53,6 +60,8 @@ fetch("assets/json/data.json")
             });
           }, 200);
         }else{
+          text_date.style.display = "none";
+          text_photographer.style.display = "none";
           img.style.objectFit = "cover";
           label.style.objectFit = "cover";
           div.style.width = "";
@@ -65,6 +74,7 @@ fetch("assets/json/data.json")
       div.appendChild(img);
       div.appendChild(label);
       div.appendChild(text_date);
+      div.appendChild(text_photographer);
 
       image_content.appendChild(div)
     });
