@@ -7,7 +7,8 @@
     "object_position": "50% 10%",
     "date": "2025/04/05",
     "avatar": "Chocolat",
-    "world": "海に駅 - A station in the sea"
+    "world": "海に駅 - A station in the sea",
+    "photographer": "yu2mimi"
   },
   {
     "id": 2,
@@ -17,7 +18,8 @@
     "object_position": "50% 10%",
     "date": "2025/04/05",
     "avatar": "Chocolat",
-    "world": "水平線"
+    "world": "水平線",
+    "photographer": "yu2mimi"
   },
   {
     "id": 3,
@@ -27,7 +29,8 @@
     "object_position": "50% 50%",
     "date": "2025/04/05",
     "avatar": "Chocolat",
-    "world": "水平線"
+    "world": "水平線",
+    "photographer": "yu2mimi"
   },
   {
     "id": 4,
@@ -37,7 +40,8 @@
     "object_position": "50% 10%",
     "date": "2025/04/05",
     "avatar": "Chocolat",
-    "world": "Rest."
+    "world": "Rest.",
+    "photographer": "yu2mimi"
   },
   {
     "id": 5,
@@ -47,7 +51,8 @@
     "object_position": "50% 10%",
     "date": "2025/04/05",
     "avatar": "Chocolat",
-    "world": "白背景で写真を撮るだけのワールド"
+    "world": "白背景で写真を撮るだけのワールド",
+    "photographer": "yu2mimi"
   },
   {
     "id": 6,
@@ -57,6 +62,7 @@
     "object_position": "50% 30%",
     "date": "2025/04/05",
     "avatar": "Chocolat",
-    "world": "白背景で写真を撮るだけのワールド"
+    "world": "白背景で写真を撮るだけのワールド",
+    "photographer": "yu2mimi"
   }
 ]
