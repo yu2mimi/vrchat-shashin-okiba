@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Noto+Sans+JP:wght@900&family&family=Zen+Kaku+Gothic+New&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+html, body{
+  pointer-events: none;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Zen Kaku Gothic New", "Noto Sans JP", sans-serif;
+  font-weight: 400;
+
+  --light-theme-background-color: #ebeced;
+  --light-theme-text-color: #555555;
+  --light-theme-sub-color: #dfdfdf;
+  --dark-theme-background-color: #242426;
+  --dark-theme-text-color: #cfcccc;
+  --dark-theme-sub-color: #3f3f42;
+  --accent-color: #02e3ba;
+
+  --background-color: var(--light-theme-background-color);
+  --text-color: var(--light-theme-text-color);
+  --sub-color: var(--light-theme-sub-color);
+
+  background-color: var(--background-color);
+  color: var(--text-color);
+
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+#loader{
+  pointer-events: none;
+}
+
+.loading-bar{
+  top: 50%;
+  margin: auto;
+  margin-top: -1px;
+  position: relative;
+  width: 100%;
+  max-width: 100px;
+  height: 2px;
+  overflow: hidden;
+
+  opacity: 1;
+  transition: opacity 0.2s ease-out;
+}
+
+.bar {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--text-color);
+  animation: slide 2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@keyframes slide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+#gallery-content, #about-content, #profile-content{
+  position: absolute;
+  opacity: 0;
+  top: 20px;
+  transition: opacity 0.5s, top 0.5s;
+}
+#gallery-content{
+  pointer-events: auto;
+}
+.content{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  will-change: transform;
+  transition: transform 0.1s ease-out;
+}
+
+header{
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+
+  opacity: 0;
+  left: 20px;
+  transition: opacity 0.5s, left 0.5s;
+}
+
+header > h2{
+  pointer-events: auto;
+}
+
+footer{
+  pointer-events: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 5px;
+  & h1{
+    position: absolute;
+    padding: 1em;
+    right: 0;
+    bottom: 0.5em;
+    border: none;
+    cursor: pointer;
+    pointer-events: auto;
+  }
+  & h1:hover{
+    animation: floatUpDown 1s ease-in-out infinite;
+  }
+}
+
+
+@keyframes floatUpDown {
+  0%  {
+    bottom: 0.5em;
+  }
+  50% {
+    bottom: 1em;
+  }
+  100% {
+    bottom: 0.5em;
+  }
+}
+
+h1{
+  margin: 5px;
+  padding: 0;
+  line-height: 0.8em;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.6em;
+  border-bottom: 1px solid var(--text-color);
+  cursor: default;
+}
+
+h2{
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+  font-family: "Hina Mincho", serif;
+  font-weight: 400;
+  font-size: 20px;
+  writing-mode: sideways-rl;
+  cursor: pointer;
+}
+h2:hover{
+  color: var(--accent-color);
+}
+
+.image-content{
+  margin: 20vh 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.image-box{
+  position: relative;
+  width: 24vw;
+  height: 24vw;
+  margin: 2.5vw;
+  transition: width 0.2s, height 0.2s;
+}
+.image-box:hover{
+  width: 25vw;
+  height: 25vw;
+}
+.image, .img-label{
+  max-width: 80vw;
+  max-height: 90vh;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img-label{
+  z-index: 2;
+}
+.toggle{
+  display: none;
+}
+.toggle:checked + .image{
+  width: auto;
+  height: auto;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+/* .label{
+  position: absolute;
+  width: 27vw;
+  height: 27vw;
+  padding: 2vw;
+  top: 1vw;
+  left: 1vw;
+  border: 1px solid #00000000;
+  transition: border-color 0.5s ease-in-out;
+  z-index: 20;
+}
+.label:hover{
+  border-color: var(--text-color);
+} */
+.guard{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+}
+
+.image._1, .image._2, .image._5{
+  object-position: 50% 10%;
+}
+.image._4{
+  object-position: 80% 50%;
+}
+.image._6{
+  object-position: 50% 30%;
+}
+
+
+#about-content, #profile-content{
+  margin: 10vh 10vw;
+  & h1{
+    border: none;
+  }
+}
+p{
+  font-family: "Hina Mincho", serif;
+  font-size: 16px;
+}
+
+#icon{
+  width: 10em;
+  height: 10em;
+  margin-bottom: 3em;
+}
+
+a{
+  color: var(--text-color);
+  font-family: "Hina Mincho", serif;
+  line-height: 2em;
+}
