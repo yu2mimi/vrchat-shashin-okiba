@@ -272,4 +272,5 @@ a{
   color: var(--text-color);
   font-family: "Hina Mincho", serif;
   line-height: 2em;
+  pointer-events: auto;
 }
