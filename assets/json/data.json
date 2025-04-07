@@ -1,48 +1,60 @@
 [
   {
+    "id": 1,
     "url": "VRChat_2025-04-05_03-30-47.webp",
     "width": 608,
     "height": 1080,
+    "object_position": "50% 10%",
     "date": "2025/04/05",
     "avatar": "Chocolat",
     "world": "海に駅 - A station in the sea"
   },
   {
+    "id": 2,
     "url": "VRChat_2025-04-05_16-41-17.webp",
     "width": 608,
     "height": 1080,
+    "object_position": "50% 10%",
     "date": "2025/04/05",
     "avatar": "Chocolat",
     "world": "水平線"
   },
   {
+    "id": 3,
     "url": "VRChat_2025-04-05_16-43-08.webp",
     "width": 608,
     "height": 1080,
+    "object_position": "50% 50%",
     "date": "2025/04/05",
     "avatar": "Chocolat",
     "world": "水平線"
   },
   {
+    "id": 4,
     "url": "VRChat_2025-04-05_03-32-39.webp",
     "width": 1920,
     "height": 1080,
+    "object_position": "50% 10%",
     "date": "2025/04/05",
     "avatar": "Chocolat",
     "world": "Rest."
   },
   {
+    "id": 5,
     "url": "VRChat_2025-04-05_20-20-52.webp",
     "width": 1866,
     "height": 2859,
+    "object_position": "50% 10%",
     "date": "2025/04/05",
     "avatar": "Chocolat",
     "world": "白背景で写真を撮るだけのワールド"
   },
   {
+    "id": 6,
     "url": "VRChat_2025-04-05_20-23-36.webp",
     "width": 608,
     "height": 1080,
+    "object_position": "50% 30%",
     "date": "2025/04/05",
     "avatar": "Chocolat",
     "world": "白背景で写真を撮るだけのワールド"

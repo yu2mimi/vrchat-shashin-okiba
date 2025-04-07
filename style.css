@@ -240,7 +240,7 @@ h2:hover{
   z-index: 10;
 }
 
-.image._1, .image._2, .image._5{
+/* .image._1, .image._2, .image._5{
   object-position: 50% 10%;
 }
 .image._4{
@@ -248,7 +248,7 @@ h2:hover{
 }
 .image._6{
   object-position: 50% 30%;
-}
+} */
 
 
 #about-content, #profile-content{
