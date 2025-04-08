@@ -43,8 +43,8 @@ fetch("assets/json/data.json")
           text_date.style.display = "";
           text_photographer.style.display = "";
           if(photo.width > photo.height){
-            div.style.width = "80vw";
-            div.style.height = `${80*photo.height/photo.width}vw`;
+            div.style.width = "70vw";
+            div.style.height = `${70*photo.height/photo.width}vw`;
           }else{
             div.style.width = `${90*photo.width/photo.height}vh`;
             div.style.height = "90vh";
